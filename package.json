@@ -21,6 +21,7 @@
     "vue-router": "4.1.2"
   },
   "devDependencies": {
+    "@aws-amplify/cli": "^10.5.2",
     "@pinia/testing": "0.0.12",
     "@playwright/experimental-ct-vue": "1.23.4",
     "@playwright/test": "1.23.4",
