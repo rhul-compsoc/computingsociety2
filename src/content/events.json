@@ -1,0 +1,18 @@
+{
+    "events" : [
+        {"event_title" : "Refreshers Week: Games Night",
+        "desc" : "Playing games for refreshers weeeek",
+        "date_start" : "2023-01-09T18:00:00.511Z",
+        "date_end": "2023-01-09T18:00:00.511Z",
+        "links" : [{
+            "name" : "get ticket here",
+            "link" : "https://computingsociety.co.uk"
+        }, {
+            "name" : "register your interest",
+            "link" : "discord.com"
+        }]},
+        {"event_title" : "Refreshers Week: Pub Night"},
+        {"event_title" : "Refreshers Week: Pizza Party"},
+        {"event_title" : "Refreshers Week: Movie Night"}
+    ]
+}
