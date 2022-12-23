@@ -1,4 +1,6 @@
 <script lang="ts">
+import { format } from 'path';
+
     export default {
         props: {
             title: {
@@ -24,9 +26,21 @@
             links: {
                 type: Array<{name: string, link: string}>,
                 required: false
+            },
+            dateFormatMethod: {
+                type: Function,
+                default(start: Date, end: Date): string {
+                    let timeOptions: object = { hour: "2-digit", minute: "2-digit" };
+                    let dateOptions: object = {weekday: "long", year: "numeric", month: 'long', day: 'numeric'}
+                    let str: string = "";
+                    str += start.toLocaleDateString(undefined, dateOptions);
+                    str = str + ", " + start.toLocaleTimeString([], timeOptions) + "-" + end.toLocaleTimeString([], timeOptions);
+                    return str;
+                }
             }
         }
     }
+
 </script>
 
 <template>
@@ -38,13 +52,12 @@
             {{ desc }}
         </div>
         <div>
-            {{ datestart }} - {{ dateend }}
+            {{ dateFormatMethod(datestart, dateend) }}
         </div>
 
         <div>
             <div v-for="obj in links" :key="obj.name">
-                {{ obj.name }}
-                {{ obj.link }}
+                <a :href="obj.link"> {{ obj.name }} </a>
             </div>
         </div> 
     </div>

@@ -14,11 +14,7 @@ useHead({
     {
       property: 'og:title',
       content: route.meta.title,
-    },
-    {
-      name: 'twitter:title',
-      content: route.meta.title,
-    },
+    }
   ],
 })
 
@@ -27,6 +23,14 @@ const BUILD_DATE = import.meta.env.VITE_APP_BUILD_EPOCH
   : undefined
 
 let activeEvents = events.events;
+
+function dateFromStr(str: string | undefined): Date {
+  if (str != null) {
+    return new Date(str);
+  } else {
+    return new Date();
+  }
+}
 
 </script>
 
@@ -42,14 +46,15 @@ let activeEvents = events.events;
         header
       </header>
       <main>
+        
         Upcoming Events
 
         <div class="flex">
           <Event v-for="item in activeEvents" :key="item.event_title"
             :title=item.event_title
             :desc=item.desc
-            :datestart="item.date_start"
-            :dateend="item.date_end"
+            :datestart="dateFromStr(item.date_start)"
+            :dateend="dateFromStr(item.date_end)"
             :links="item.links"
           />
         </div>
