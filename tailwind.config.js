@@ -10,6 +10,13 @@ module.exports = {
           body: ['Montserrat', 'sans-serif'],
         },
       },
+      colors: {
+        bgGrey: "#2C2C2C",
+        red: "#C32126",
+        grey: "#3F3D3D",
+        white: "#FFFFFF",
+        black: "#000000"
+      }
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

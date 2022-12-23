@@ -27,6 +27,11 @@ import { format } from 'path';
                 type: Array<{name: string, link: string}>,
                 required: false
             },
+            location: {
+                type: String,
+                required: true,
+                default: "_ Event Location"
+            },
             dateFormatMethod: {
                 type: Function,
                 default(start: Date, end: Date): string {
@@ -44,8 +49,8 @@ import { format } from 'path';
 </script>
 
 <template>
-    <div class="">
-        <div>
+    <div class="bg-white m-3 p-3">
+        <div class="">
             {{ title }}
         </div>
         <div>
@@ -54,11 +59,14 @@ import { format } from 'path';
         <div>
             {{ dateFormatMethod(datestart, dateend) }}
         </div>
-
         <div>
-            <div v-for="obj in links" :key="obj.name">
-                <a :href="obj.link"> {{ obj.name }} </a>
-            </div>
+            {{ location }}
+        </div>
+
+        <div class="flex-row">
+            <a v-for="obj in links" :key="obj.name" :href="obj.link" class="w-fit">
+                <div class="bg-red text-white p-2 w-fit"> {{ obj.name }} </div>
+            </a>
         </div> 
     </div>
 </template>
