@@ -1,5 +1,4 @@
 <script lang="ts">
-import { format } from 'path';
 
     export default {
         props: {
@@ -35,8 +34,8 @@ import { format } from 'path';
             dateFormatMethod: {
                 type: Function,
                 default(start: Date, end: Date): string {
-                    let timeOptions: object = { hour: "2-digit", minute: "2-digit" };
-                    let dateOptions: object = {weekday: "long", year: "numeric", month: 'long', day: 'numeric'}
+                    const timeOptions: object = { hour: "2-digit", minute: "2-digit" };
+                    const dateOptions: object = { weekday: "long", year: "numeric", month: 'long', day: 'numeric' };
                     let str: string = "";
                     str += start.toLocaleDateString(undefined, dateOptions);
                     str = str + ", " + start.toLocaleTimeString([], timeOptions) + "-" + end.toLocaleTimeString([], timeOptions);
@@ -49,23 +48,20 @@ import { format } from 'path';
 </script>
 
 <template>
-    <div class="bg-white m-3 p-3">
-        <div class="">
+    <div class="bg-white m-3 p-3 shadow-xl shadow-grey">
+        <div class="text-xl">
             {{ title }}
         </div>
-        <div>
+        <div class="text-sm">
             {{ desc }}
         </div>
-        <div>
-            {{ dateFormatMethod(datestart, dateend) }}
-        </div>
-        <div>
-            {{ location }}
+        <div class="text-sm">
+            {{ dateFormatMethod(datestart, dateend) }} | {{ location }}
         </div>
 
-        <div class="flex-row">
-            <a v-for="obj in links" :key="obj.name" :href="obj.link" class="w-fit">
-                <div class="bg-red text-white p-2 w-fit"> {{ obj.name }} </div>
+        <div class="flex justify-end">
+            <a v-for="obj in links" :key="obj.name" :href="obj.link" class="block shadow shadow-grey bg-red text-white px-3 py-2 w-fit m-2">
+                {{ obj.name }}
             </a>
         </div> 
     </div>
