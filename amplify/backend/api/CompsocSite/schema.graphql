@@ -1,0 +1,13 @@
+type DiscordEvents @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  discord_id: String!
+  name: String!
+  description: String
+  url: AWSURL!
+  user_count: Int!
+  start_time: AWSDateTime!
+  end_time: AWSDateTime!
+  EntityType: AWSJSON!
+  banner_image: AWSURL
+  last_updated: AWSTimestamp
+}

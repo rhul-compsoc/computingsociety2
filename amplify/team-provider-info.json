@@ -10,6 +10,13 @@
       "StackName": "amplify-compsocsite-dev-123420",
       "StackId": "arn:aws:cloudformation:eu-west-2:687265833365:stack/amplify-compsocsite-dev-123420/cb5a4120-812b-11ed-81ff-02845d4c2702",
       "AmplifyAppId": "dr146qqcxm8gh"
+    },
+    "categories": {
+      "function": {
+        "GetDiscordEvents": {
+          "botToken": "x"
+        }
+      }
     }
   }
 }
