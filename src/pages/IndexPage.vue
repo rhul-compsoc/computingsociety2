@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DiscordEvents from '@/components/DiscordEvents.vue';
-import events from '../content/events.json';
+import events from '@/content/events.json';
 
 import Event from '@/components/Event.vue';
 
@@ -43,23 +43,23 @@ function dateFromStr(str: string | undefined): Date {
       class="p-2 container relative max-w-2xl mx-auto bg-bgGrey/[.79] backdrop-blur-md bg-blend-normal shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5"
     >
       <header class="px-4 pt-6 prose-sm md:px-6 md:prose flex-col items-center text-center justify-center m-auto w-full">
-        <img src="../assets/logo.svg" class="w-60" alt="compsoc" />
+        <img src="@/assets/logo.svg" class="w-60" alt="compsoc" />
         <div class="text-black text-xl"> Royal Holloway Computing Society </div>
       </header>
       <main>
 
         <div class="grid-rows-2">
           <div class="flex-row block shadow shadow-grey bg-red text-white px-3 py-2 m-2">
-            <img src="../assets/membership.svg" alt="Membership"/> <div> Membership </div>
+            <img src="@/assets/membership.svg" alt="Membership"/> <div> Membership </div>
           </div>
           <div class="block shadow shadow-grey bg-red text-white px-3 py-2 m-2">
-            <img src="../assets/committee.svg" alt="Committee" class="fill-white"/> Committee
+            <img src="@/assets/committee.svg" alt="Committee" class="fill-white"/> Committee
           </div>
           <div class="block shadow shadow-grey bg-red text-white px-3 py-2 m-2">
-            <img src="../assets/su.svg" alt="Student Union"/> Student Union
+            <img src="@/assets/su.svg" alt="Student Union"/> Student Union
           </div>
           <div class="block shadow shadow-grey bg-red text-white px-3 py-2 m-2">
-            <img src="../assets/events.svg" alt="Events"/> Events
+            <img src="@/assets/events.svg" alt="Events"/> Events
           </div>
         </div>
 
