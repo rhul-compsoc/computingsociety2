@@ -40,25 +40,25 @@ function dateFromStr(str: string | undefined): Date {
       class="absolute inset-0 bg-[url(/img/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
     ></div>
     <div
-      class="p-2 container relative max-w-2xl mx-auto bg-bgGrey/[.79] backdrop-blur-md bg-blend-normal shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5"
+      class="p-2 container relative max-w-2xl mx-auto bg-gray-700 backdrop-blur-md bg-blend-normal shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5"
     >
       <header class="px-4 pt-6 prose-sm md:px-6 md:prose flex-col items-center text-center justify-center m-auto w-full flex">
         <img src="@/assets/logo.svg" class="w-96" alt="compsoc" />
-        <div class="text-black text-xl"> Royal Holloway Computing Society </div>
+        <div class="text-white text-xl"> Royal Holloway Computing Society </div>
       </header>
       <main>
 
-        <div class="grid-rows-2">
-          <div class="flex-row block shadow shadow-grey bg-red text-white px-3 py-2 m-2">
+        <div class="grid-cols-2">
+          <div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
             <img src="@/assets/membership.svg" alt="Membership"/> <div> Membership </div>
           </div>
-          <div class="block shadow shadow-grey bg-red text-white px-3 py-2 m-2">
+          <div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
             <img src="@/assets/committee.svg" alt="Committee" class="fill-white"/> Committee
           </div>
-          <div class="block shadow shadow-grey bg-red text-white px-3 py-2 m-2">
+          <div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
             <img src="@/assets/su.svg" alt="Student Union"/> Student Union
           </div>
-          <div class="block shadow shadow-grey bg-red text-white px-3 py-2 m-2">
+          <div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
             <img src="@/assets/events.svg" alt="Events"/> Events
           </div>
         </div>

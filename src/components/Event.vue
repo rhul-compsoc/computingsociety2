@@ -36,7 +36,7 @@
                 default(start: Date, end: Date): string {
                     const timeOptions: object = { hour: "2-digit", minute: "2-digit" };
                     const dateOptions: object = { weekday: "long", year: "numeric", month: 'long', day: 'numeric' };
-                    let str: string = "";
+                    let str = "";
                     str += start.toLocaleDateString(undefined, dateOptions);
                     str = str + ", " + start.toLocaleTimeString([], timeOptions) + "-" + end.toLocaleTimeString([], timeOptions);
                     return str;
@@ -60,7 +60,7 @@
         </div>
 
         <div class="flex justify-end">
-            <a v-for="obj in links" :key="obj.name" :href="obj.link" class="block shadow shadow-grey bg-red text-white px-3 py-2 w-fit m-2">
+            <a v-for="obj in links" :key="obj.name" :href="obj.link" class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 w-fit m-2">
                 {{ obj.name }}
             </a>
         </div> 
