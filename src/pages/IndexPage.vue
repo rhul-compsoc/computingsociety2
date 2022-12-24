@@ -66,7 +66,9 @@ function dateFromStr(str: string | undefined): Date {
         <div class="font-semibold text-2xl text-white px-5"> Upcoming Events </div>
 
         <div class="flex-col">
-          <Event v-for="item in activeEvents" :key="item.event_title"
+          <Event
+            v-for="item in activeEvents" 
+            :key="item.event_title"
             :title=item.event_title
             :desc=item.desc
             :datestart="dateFromStr(item.date_start)"
@@ -80,5 +82,9 @@ function dateFromStr(str: string | undefined): Date {
         website by compsoc
       </footer>
     </div>
+  </div>
+  <!-- Here I'll put the canvas / whatever will take up the background -->
+  <div class="w-full h-full fixed top-0 left-0 -z-10 bg-gradient-to-bl from-[#eb6420] to-[#ff7e42] overflow-hidden">
+    
   </div>
 </template>
