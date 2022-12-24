@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getImageUrl } from "@/util/utils.ts";
+import { getImageUrl } from "@/util/utils.js";
 
 const props = defineProps<{
 	src: string
