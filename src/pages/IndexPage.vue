@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import DiscordEvents from '@/components/DiscordEvents.vue';
 import events from '@/content/events.json';
-
-import Event from '@/components/Event.vue';
 
 const route = useRoute()
 
@@ -49,18 +46,10 @@ function dateFromStr(str: string | undefined): Date {
       <main>
 
         <div class="grid-cols-2">
-          <div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
-            <img src="@/assets/membership.svg" alt="Membership"/> <div> Membership </div>
-          </div>
-          <div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
-            <img src="@/assets/committee.svg" alt="Committee" class="fill-white"/> Committee
-          </div>
-          <div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
-            <img src="@/assets/su.svg" alt="Student Union"/> Student Union
-          </div>
-          <div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
-            <img src="@/assets/events.svg" alt="Events"/> Events
-          </div>
+          <SectionButtons text="Membership" src="membership.svg" onclick="() => {console.log('hi')}"/>
+          <SectionButtons text="Committee" src="committee.svg" onclick="() => {console.log('hi')}"/>
+          <SectionButtons text="Student Union" src="su.svg" onclick="() => {console.log('hi')}"/>
+          <SectionButtons text="Events" src="events.svg" onclick="() => {console.log('hi')}"/>
         </div>
 
         <div class="font-semibold text-2xl text-white px-5"> Upcoming Events </div>
