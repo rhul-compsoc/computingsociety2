@@ -10,7 +10,12 @@ const props = defineProps<{
 </script>
 
 <template>
-	<div class="block shadow shadow-grey bg-red-700 text-white px-3 py-2 m-2">
-	<img :alt="props.text" :src="getImageUrl(props.src)" /> <div> {{props.text}} </div>
+	<div class="shadow shadow-grey bg-red-700 text-white p-2 m-2">
+		<div class="flex align-middle items-center gap-5">
+			<img :alt="props.text" :src="getImageUrl(props.src)" /> 
+			<div> 
+				{{props.text}} 
+			</div>
+		</div>
 	</div>
 </template>
