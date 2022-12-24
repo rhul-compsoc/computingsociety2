@@ -45,7 +45,7 @@ function dateFromStr(str: string | undefined): Date {
       </header>
       <main>
 
-        <div class="grid-cols-2">
+        <div class="grid md:grid-cols-2">
           <SectionButtons text="Membership" src="membership.svg" onclick="() => {console.log('hi')}"/>
           <SectionButtons text="Committee" src="committee.svg" onclick="() => {console.log('hi')}"/>
           <SectionButtons text="Student Union" src="su.svg" onclick="() => {console.log('hi')}"/>
