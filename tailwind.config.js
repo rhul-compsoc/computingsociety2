@@ -1,17 +1,23 @@
 const plugin = require('tailwindcss/plugin')
-// const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,ts}'],
-  // theme: {
-  //   extend: {
-  //     // here's how to extend fonts if needed
-  //     fontFamily: {
-  //       sans: [...defaultTheme.fontFamily.sans],
-  //     },
-  //   },
-  // },
+  theme: {
+    extend: {
+      fontFamily: {
+          body: ['Montserrat', 'sans-serif'],
+        },
+      },
+      colors: {
+        bgGrey: "#2C2C2C",
+        red: "#C32126",
+        grey: "#3F3D3D",
+        white: "#FFFFFF",
+        black: "#000000"
+      }
+  },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/line-clamp'),
