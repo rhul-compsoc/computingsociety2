@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import events from "@/content/events.json";
+import { dateFromStr } from '@/util/utils';
 
 const route = useRoute();
 
@@ -15,19 +16,7 @@ useHead({
   ],
 });
 
-const BUILD_DATE = import.meta.env.VITE_APP_BUILD_EPOCH
-  ? new Date(Number(import.meta.env.VITE_APP_BUILD_EPOCH))
-  : undefined;
-
 let activeEvents = events.events;
-
-function dateFromStr(str: string | undefined): Date {
-  if (str != null) {
-    return new Date(str);
-  } else {
-    return new Date();
-  }
-}
 
 // TODO: Replace this!
 function placeholder() {
