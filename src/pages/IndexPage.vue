@@ -22,9 +22,52 @@ let activeEvents = events.events;
 function placeholder() {
   console.log("Hello!");
 }
+
+const state = {
+  fps: 60,
+  color: "#0f0",
+  charset: "Compsoc"
+};
+
+// from https://codepen.io/pavi2410/pen/oNjGVgM
+const runBackground = () => {
+  const canvas = document.getElementById("canvas") as HTMLCanvasElement;
+  if(!canvas) throw new Error("No canvas");
+
+  const ctx = canvas.getContext("2d");
+  if(!ctx) throw new Error("No canvas context");
+
+
+  let width: number, height: number, letters: number[];
+  const resize = () => {
+    width = canvas.width = innerWidth;
+    height = canvas.height = innerHeight;
+
+    letters = Array(Math.ceil(width / 10)).fill(0);
+  };
+  window.addEventListener("resize", resize);
+  resize();
+
+  const random = (items: string) => items[Math.floor(Math.random() * items.length)];
+
+  const draw = () => {
+    ctx.fillStyle = "rgba(0,0,0,.05)";
+    ctx.fillRect(0, 0, width, height);
+    ctx.fillStyle = state.color;
+
+    for (let i = 0; i < letters.length; i++) {
+      let currLetter = letters[i];
+      ctx.fillText(random(state.charset), i * 10, currLetter);
+      letters[i] = currLetter >= height || currLetter >= 10000 * Math.random() ? 0 : currLetter + 10;
+    }
+  };
+
+  setInterval(draw, 1000 / state.fps);
+};
+
 </script>
 
-<template>
+<template :onload="runBackground()">
   <div class="relative md:py-8 font-body">
     <div
       class="absolute inset-0 bg-[url(/img/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
@@ -84,7 +127,9 @@ function placeholder() {
     </div>
   </div>
   <!-- Here I'll put the canvas / whatever will take up the background -->
-  <div
-    class="w-full h-full fixed top-0 left-0 -z-10 bg-gradient-to-bl from-[#eb6420] to-[#ff7e42] overflow-hidden"
-  ></div>
+  <canvas
+    class="w-full h-full fixed top-0 left-0 z-10 overflow-hidden"
+    id="canvas"
+  >
+  </canvas>
 </template>
