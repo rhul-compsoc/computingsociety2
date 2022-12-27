@@ -78,8 +78,8 @@ function placeholder() {
           />
         </div>
       </main>
-      <footer class="py-6 text-xs text-center font-sm text-gray-700">
-        website by compsoc
+      <footer class="py-6 text-xs text-center font-sm text-white">
+        website by <a href="https://github.com/rhul-compsoc/" target="_"> compsoc </a>
       </footer>
     </div>
   </div>
