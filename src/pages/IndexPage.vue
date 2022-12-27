@@ -81,6 +81,7 @@ var activeButtons = {
 
         <div class="flex-col">
           <Event
+            v-if="activeButtons.events"
             v-for="item in activeEvents"
             :key="item.event_title"
             :title="item.event_title"
