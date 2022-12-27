@@ -21,7 +21,16 @@ let activeEvents = events.events;
 // TODO: Replace this!
 function placeholder() {
   console.log("Hello!");
+
 }
+
+var activeButtons = {
+  "membership" : false,
+  "committee" : false,
+  "studentunion" : false,
+  "events" : true
+}
+
 </script>
 
 <template>
@@ -44,21 +53,25 @@ function placeholder() {
             text="Membership"
             src="membership.svg"
             @whenClick="placeholder"
+            :active="activeButtons.membership"
           />
           <SectionButtons
             text="Committee"
             src="committee.svg"
             @whenClick="placeholder"
+            :active="activeButtons.committee"
           />
           <SectionButtons
             text="Student Union"
             src="su.svg"
             @whenClick="placeholder"
+            :active="activeButtons.studentunion"
           />
           <SectionButtons
             text="Events"
             src="events.svg"
             @whenClick="placeholder"
+            :active="activeButtons.events"
           />
         </div>
 
