@@ -24,13 +24,6 @@ function placeholder() {
 
 }
 
-var activeButtons = {
-  "membership" : false,
-  "committee" : false,
-  "studentunion" : false,
-  "events" : true
-}
-
 </script>
 
 <template>
@@ -78,18 +71,21 @@ var activeButtons = {
         <div class="font-semibold text-2xl text-white px-5">
           Upcoming Events
         </div>
-
-        <div class="flex-col">
-          <Event
-            v-if="activeButtons.events"
-            v-for="item in activeEvents"
-            :key="item.event_title"
-            :title="item.event_title"
-            :desc="item.desc"
-            :datestart="dateFromStr(item.date_start)"
-            :dateend="dateFromStr(item.date_end)"
-            :links="item.links"
-          />
+        
+        <div>
+          <b-card no-body>
+            <div class="flex-col">
+              <Event
+                v-for="item in activeEvents"
+                :key="item.event_title"
+                :title="item.event_title"
+                :desc="item.desc"
+                :datestart="dateFromStr(item.date_start)"
+                :dateend="dateFromStr(item.date_end)"
+                :links="item.links"
+              />
+            </div>
+            </b-card>
         </div>
       </main>
       <footer class="py-6 text-xs text-center font-sm text-white">
