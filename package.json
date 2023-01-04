@@ -15,9 +15,13 @@
     "test:ci-ct": "playwright test -c playwright-ct.config.ts"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "@vueuse/head": "0.7.6",
+    "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
+    "bootstrap-vue-3": "^0.5.0",
     "pinia": "2.0.16",
+    "popper.js": "^1.16.1",
     "vue": "3.2.37",
     "vue-router": "4.1.2"
   },

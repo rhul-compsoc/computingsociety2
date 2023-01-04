@@ -4,7 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/index.postcss'
 import router from './router'
-import BootstrapVue from 'bootstrap-vue';
+import BootstrapVue3 from 'bootstrap-vue-3';
 
 const head = createHead()
 const app = createApp(App)
@@ -12,6 +12,6 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(head)
-app.use(BootstrapVue)
+app.use(BootstrapVue3)
 
 app.mount('#app')

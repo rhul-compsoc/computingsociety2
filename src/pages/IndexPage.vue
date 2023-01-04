@@ -18,12 +18,6 @@ useHead({
 
 let activeEvents = events.events;
 
-// TODO: Replace this!
-function placeholder() {
-  console.log("Hello!");
-
-}
-
 </script>
 
 <template>
@@ -45,26 +39,18 @@ function placeholder() {
           <SectionButtons
             text="Membership"
             src="membership.svg"
-            @whenClick="placeholder"
-            :active="activeButtons.membership"
           />
           <SectionButtons
             text="Committee"
             src="committee.svg"
-            @whenClick="placeholder"
-            :active="activeButtons.committee"
           />
           <SectionButtons
             text="Student Union"
             src="su.svg"
-            @whenClick="placeholder"
-            :active="activeButtons.studentunion"
           />
           <SectionButtons
             text="Events"
             src="events.svg"
-            @whenClick="placeholder"
-            :active="activeButtons.events"
           />
         </div>
 
@@ -73,19 +59,36 @@ function placeholder() {
         </div>
         
         <div>
-          <b-card no-body>
-            <div class="flex-col">
-              <Event
-                v-for="item in activeEvents"
-                :key="item.event_title"
-                :title="item.event_title"
-                :desc="item.desc"
-                :datestart="dateFromStr(item.date_start)"
-                :dateend="dateFromStr(item.date_end)"
-                :links="item.links"
-              />
-            </div>
-            </b-card>
+            <b-tabs pills>
+              <b-tab title="Membership">
+                <div>
+                  membership
+                </div>
+              </b-tab>
+              <b-tab title="Committee">
+                <div>
+                  committee
+                </div>
+              </b-tab>
+              <b-tab title="Student Union">
+                <div>
+                  student Union
+                </div>
+              </b-tab>
+              <b-tab title="Events" active>
+              <div class="flex-col">
+                <Event
+                  v-for="item in activeEvents"
+                  :key="item.event_title"
+                  :title="item.event_title"
+                  :desc="item.desc"
+                  :datestart="dateFromStr(item.date_start)"
+                  :dateend="dateFromStr(item.date_end)"
+                  :links="item.links"
+                />
+              </div>
+              </b-tab>
+            </b-tabs>
         </div>
       </main>
       <footer class="py-6 text-xs text-center font-sm text-white">
