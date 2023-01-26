@@ -97,6 +97,7 @@ var activeButtons = {
         <div class="flex flex-row flex-wrap w-full">
           <CommitteeMember
             v-for="item in activeCommittee"
+            :portrait="item.portrait"
             :key="item.name"
             :name="item.name"
             :role="item.role"
