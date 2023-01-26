@@ -1,0 +1,18 @@
+{
+    "committee" : [
+        {
+            "portrait" : "placeholder.png",
+            "name" : "name",
+            "role" : "role",
+            "github" : "github.com",
+            "linkedin" : "linkedin.com"
+        },
+        {
+            "portrait" : "placeholder.png",
+            "name" : "name2",
+            "role" : "role2",
+            "github" : "github.com/2",
+            "linkedin" : "linkedin.com/2"
+        }
+    ]
+}

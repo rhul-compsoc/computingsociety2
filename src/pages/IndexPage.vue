@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import events from "@/content/events.json";
+import committee from "@/content/committee.json";
 import { dateFromStr } from '@/util/utils';
 
 const route = useRoute();
@@ -17,6 +18,7 @@ useHead({
 });
 
 let activeEvents = events.events;
+let activeCommittee = committee.committee;
 
 // TODO: Replace this!
 function placeholder() {
@@ -91,6 +93,23 @@ var activeButtons = {
             :links="item.links"
           />
         </div>
+
+        <div class="flex flex-row flex-wrap w-full">
+          <CommitteeMember
+            v-for="item in activeCommittee"
+            :key="item.name"
+            :name="item.name"
+            :role="item.role"
+            :github="item.github"
+            :linkedin="item.linkedin"
+            />
+        </div>
+
+        <div class="">
+      
+
+        </div>
+
       </main>
       <footer class="py-6 text-xs text-center font-sm text-white">
         website by <a href="https://github.com/rhul-compsoc/" target="_"> compsoc </a>
