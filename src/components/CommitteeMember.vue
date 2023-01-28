@@ -1,7 +1,5 @@
 <script lang="ts">
 
-
-
     export default {
         props: {
             portrait: {

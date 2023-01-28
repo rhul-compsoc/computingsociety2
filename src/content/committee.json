@@ -13,6 +13,17 @@
             "role" : "role2",
             "github" : "github.com/2",
             "linkedin" : "linkedin.com/2"
+        },
+        {
+            "portrait" : "placeholder.png",
+            "name" : "name3",
+            "role" : "role4",
+            "github" : "peepeepooopoo"
+        },
+        {
+            "portrait" : "placeholder.png",
+            "name" : "name5",
+            "role" : "the pee pee man"
         }
     ]
 }

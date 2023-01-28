@@ -94,7 +94,7 @@ var activeButtons = {
           />
         </div>
 
-        <div class="flex flex-row flex-wrap w-full">
+        <div class="flex justify-center flex-row flex-wrap w-full">
           <CommitteeMember
             v-for="item in activeCommittee"
             :portrait="item.portrait"
