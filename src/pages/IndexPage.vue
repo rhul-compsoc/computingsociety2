@@ -29,7 +29,7 @@ function placeholder() {
 var activeButtons = {
   "membership" : false,
   "committee" : false,
-  "studentunion" : false,
+  "contact" : false,
   "events" : true
 }
 
@@ -47,10 +47,11 @@ var activeButtons = {
         class="px-4 pt-6 prose-sm md:px-6 md:prose flex-col items-center text-center justify-center m-auto w-full flex"
       >
         <img src="@/assets/logo.svg" class="w-96" alt="compsoc" />
-        <div class="text-white text-xl">Royal Holloway Computing Society</div>
+        <div class="text-white text-2xl">Royal Holloway Computing Society</div>
+        <div class="text-white text-sm mt-5"> RHUL's student-led group supporting Computer Science students, and everyone who loves tech! </div>
       </header>
       <main>
-        <div class="grid md:grid-cols-2">
+        <div class="grid md:grid-cols-2 mt-5">
           <SectionButtons
             text="Membership"
             src="membership.svg"
@@ -64,10 +65,10 @@ var activeButtons = {
             :active="activeButtons.committee"
           />
           <SectionButtons
-            text="Student Union"
+            text="Contact us"
             src="su.svg"
             @whenClick="placeholder"
-            :active="activeButtons.studentunion"
+            :active="activeButtons.contact"
           />
           <SectionButtons
             text="Events"

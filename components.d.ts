@@ -8,6 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CommitteeMember: typeof import('./src/components/CommitteeMember.vue')['default']
+    Contact: typeof import('./src/components/Contact.vue')['default']
     DiscordEvents: typeof import('./src/components/DiscordEvents.vue')['default']
     Event: typeof import('./src/components/Event.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
