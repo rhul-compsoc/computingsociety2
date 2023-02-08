@@ -78,37 +78,54 @@ var activeButtons = {
           />
         </div>
 
-        <div class="font-semibold text-2xl text-white px-5">
-          Upcoming Events
-        </div>
+        <div class="" id="events">
+          <div class="font-semibold text-2xl text-white px-5">
+            Upcoming Events
+          </div>
 
-        <div class="flex-col">
-          <Event
-            v-if="activeButtons.events"
-            v-for="item in activeEvents"
-            :key="item.event_title"
-            :title="item.event_title"
-            :desc="item.desc"
-            :datestart="dateFromStr(item.date_start)"
-            :dateend="dateFromStr(item.date_end)"
-            :links="item.links"
-          />
-        </div>
-
-        <div class="flex justify-center flex-row flex-wrap w-full">
-          <CommitteeMember
-            v-for="item in activeCommittee"
-            :portrait="item.portrait"
-            :key="item.name"
-            :name="item.name"
-            :role="item.role"
-            :github="item.github"
-            :linkedin="item.linkedin"
+          <div class="flex-col">
+            <Event
+              v-if="activeButtons.events"
+              v-for="item in activeEvents"
+              :key="item.event_title"
+              :title="item.event_title"
+              :desc="item.desc"
+              :datestart="dateFromStr(item.date_start)"
+              :dateend="dateFromStr(item.date_end)"
+              :links="item.links"
             />
+          </div>
         </div>
 
-        <div class="">
+        <div class="" id="committee">
+
+          <div class="font-semibold text-2xl text-white px-5">
+            Committee 2022-23
+          </div>
+
+          <div class="flex justify-center flex-row flex-wrap w-full">
+            <CommitteeMember
+              v-for="item in activeCommittee"
+              :portrait="item.portrait"
+              :key="item.name"
+              :name="item.name"
+              :role="item.role"
+              :github="item.github"
+              :linkedin="item.linkedin"
+              />
+          </div>
+
+          <a href="" class="text-white"> See previous committees </a>
+
+        </div>
+
+        <div class="" id="contact">
+
+          <div class="font-semibold text-2xl text-white px-5">
+            Contact Us
+          </div>
       
+          Email: hello@computingsociety.co.uk
 
         </div>
 
