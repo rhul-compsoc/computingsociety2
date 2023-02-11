@@ -30,13 +30,13 @@ export default {
       class="absolute inset-0 bg-[url(/img/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
     ></div>
     <div
-      class="p-2 container relative max-w-2xl mx-auto bg-gray-700 backdrop-blur-md bg-blend-normal shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5"
+      class="p-2 container relative max-w-2xl mx-auto bg-gray-700/[.95] backdrop-blur-md bg-blend-normal shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5"
     >
       <header
         class="px-4 pt-6 prose-sm md:px-6 md:prose flex-col items-center text-center justify-center m-auto w-full flex"
       >
-        <img src="@/assets/logo.svg" class="w-96" alt="compsoc" />
-        <div class="text-white text-2xl">Royal Holloway Computing Society</div>
+        <img src="@/assets/logo.svg" class="w-64" alt="compsoc" />
+        <div class="text-white text-2xl font-bold">Royal Holloway Computing Society</div>
         <div class="text-white text-sm mt-5"> RHUL's student-led group supporting Computer Science students, and everyone who loves tech! </div>
       </header>
       <main>

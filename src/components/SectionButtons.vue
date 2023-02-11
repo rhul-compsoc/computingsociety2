@@ -7,12 +7,12 @@ const props = defineProps<{
   active: boolean;
 }>();
 
-const style = "shadow shadow-grey text-white p-2 m-2 select-none cursor-pointer hover:bg-red-800 ";
+const style = "shadow shadow-grey text-white p-2 m-2 select-none ";
 const getStyle = () => { // if anyone else knows how to do dynamic styling in tailwind better than this please fix
   if (props.active) {
     return style + "bg-gray-600";
   } else {
-    return style + "bg-red-700";
+    return style + "bg-red-700 cursor-pointer hover:bg-red-800";
   }
 }
 
