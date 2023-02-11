@@ -1,0 +1,33 @@
+<script setup lang="ts">
+import committee from "@/content/committee.json";
+let activeCommittee = committee.committee;
+
+</script>
+
+<template>
+
+    <div class="" id="committee">
+
+        <div class="font-semibold text-2xl text-white px-5">
+            Committee 2022-23
+        </div>
+
+        <div class="flex justify-center flex-row flex-wrap w-full">
+            <CommitteeMember
+                v-for="item in activeCommittee"
+                :portrait="item.portrait"
+                :key="item.name"
+                :name="item.name"
+                :role="item.role"
+                :github="item.github"
+                :linkedin="item.linkedin"
+            />
+        </div>
+
+        <a href="" class="text-white"> 
+            See previous committees 
+        </a>
+
+    </div>
+
+</template>

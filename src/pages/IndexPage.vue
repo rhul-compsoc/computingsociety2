@@ -1,37 +1,26 @@
-<script setup lang="ts">
-import events from "@/content/events.json";
-import committee from "@/content/committee.json";
-import { dateFromStr } from '@/util/utils';
+<script lang="ts">
 
-const route = useRoute();
-
-useHead({
-  bodyAttrs: {
-    title: route.meta.title,
-  },
-  meta: [
-    {
-      property: "og:title",
-      content: route.meta.title,
-    },
-  ],
-});
-
-let activeEvents = events.events;
-let activeCommittee = committee.committee;
-
-// TODO: Replace this!
-function placeholder() {
-  console.log("Hello!");
-
+export default {
+  data() {
+    return {
+      activeCat: 'events'
+    }
+  }
 }
 
-var activeButtons = {
-  "membership" : false,
-  "committee" : false,
-  "contact" : false,
-  "events" : true
-}
+//const route = useRoute();
+
+// useHead({
+//   bodyAttrs: {
+//     title: route.meta.title,
+//   },
+//   meta: [
+//     {
+//       property: "og:title",
+//       content: route.meta.title,
+//     },
+//   ],
+// });
 
 </script>
 
@@ -55,79 +44,38 @@ var activeButtons = {
           <SectionButtons
             text="Membership"
             src="membership.svg"
-            @whenClick="placeholder"
-            :active="activeButtons.membership"
+            :active="false"
           />
           <SectionButtons
             text="Committee"
             src="committee.svg"
-            @whenClick="placeholder"
-            :active="activeButtons.committee"
+            @Click="() => {activeCat = 'committee'}"
+            :active="activeCat == 'committee'"
           />
           <SectionButtons
             text="Contact us"
             src="su.svg"
-            @whenClick="placeholder"
-            :active="activeButtons.contact"
+            @Click="() => {activeCat = 'contact'}"
+            :active="activeCat == 'contact'"
           />
           <SectionButtons
             text="Events"
             src="events.svg"
-            @whenClick="placeholder"
-            :active="activeButtons.events"
+            @Click="() => {activeCat = 'events'}"
+            :active="activeCat == 'events'"
           />
         </div>
 
-        <div class="" id="events">
-          <div class="font-semibold text-2xl text-white px-5">
-            Upcoming Events
-          </div>
-
-          <div class="flex-col">
-            <Event
-              v-if="activeButtons.events"
-              v-for="item in activeEvents"
-              :key="item.event_title"
-              :title="item.event_title"
-              :desc="item.desc"
-              :datestart="dateFromStr(item.date_start)"
-              :dateend="dateFromStr(item.date_end)"
-              :links="item.links"
-            />
-          </div>
-        </div>
-
-        <div class="" id="committee">
-
-          <div class="font-semibold text-2xl text-white px-5">
-            Committee 2022-23
-          </div>
-
-          <div class="flex justify-center flex-row flex-wrap w-full">
-            <CommitteeMember
-              v-for="item in activeCommittee"
-              :portrait="item.portrait"
-              :key="item.name"
-              :name="item.name"
-              :role="item.role"
-              :github="item.github"
-              :linkedin="item.linkedin"
-              />
-          </div>
-
-          <a href="" class="text-white"> See previous committees </a>
-
-        </div>
-
-        <div class="" id="contact">
-
-          <div class="font-semibold text-2xl text-white px-5">
-            Contact Us
-          </div>
-      
-          Email: hello@computingsociety.co.uk
-
-        </div>
+        <!-- Tabs ../components/sections -->
+        <Events 
+          v-if="activeCat == 'events'"
+        />
+        <Committee 
+          v-if="activeCat == 'committee'"
+        />
+        <ContactUs 
+          v-if="activeCat == 'contact'"
+        />
 
       </main>
       <footer class="py-6 text-xs text-center font-sm text-white">
