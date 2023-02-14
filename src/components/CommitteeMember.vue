@@ -27,7 +27,7 @@
             getImagePathMethod: {
                 type: Function,
                 default(filename: String): string {
-                    return "@/assets/committee-portraits/" + filename;
+                    return "img/committee-portraits/" + filename;
                 }
             }
         }
@@ -38,7 +38,7 @@
 <template>
 
     <div class="bg-white w-40 m-3 p-5 shadow-xl shadow-grey flex-col justify-center text-center">
-        <img src="@/assets/committee-portraits/placeholder.png" />
+        <img :src="getImagePathMethod(portrait ?? 'placeholder.png')" alt="{{name}}'s portrait" />
         <div class="text-xl">{{ name }}</div>
         <div class="m-3">{{ role }}</div>
         <div class="flex flex-row space-x-4 justify-center">
