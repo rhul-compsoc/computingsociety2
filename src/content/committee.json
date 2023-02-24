@@ -28,6 +28,10 @@
     ],
     "actualCommittee": [
         {
+            "name": "The photo is just {name}.jpg, it may not be a jpg, but if the photo is there, they have a photo",
+            "role": "Warning"
+        },
+        {
             "name": "Stephanie Flower",
             "role": "President",
             "photo": "Stephanie Flower.jpg"
