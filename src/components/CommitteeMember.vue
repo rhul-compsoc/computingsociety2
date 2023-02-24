@@ -4,7 +4,8 @@
         props: {
             portrait: {
                 type: String,
-                required: false
+                required: false,
+                default: undefined,
             },
             name: {
                 type: String,
@@ -18,11 +19,17 @@
             },
             github: {
                 type: String,
-                required: false
+                required: false,
+                default: undefined,
             },
             linkedin: {
                 type: String,
-                required: false
+                required: false,
+                default: undefined,
+            },
+            year: {
+                type: String,
+                required: true
             },
             getImagePathMethod: {
                 type: Function,
