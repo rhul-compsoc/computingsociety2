@@ -5,416 +5,507 @@
             "name": "name",
             "role": "role",
             "github": "github.com",
-            "linkedin": "linkedin.com"
+            "linkedin": "linkedin.com",
+            "year": "2022/2023"
         },
         {
             "portrait": "placeholder.png",
             "name": "name2",
             "role": "role2",
             "github": "github.com/2",
-            "linkedin": "linkedin.com/2"
+            "linkedin": "linkedin.com/2",
+            "year": "2022/2023"
         },
         {
             "portrait": "placeholder.png",
             "name": "name3",
             "role": "role4",
-            "github": "peepeepooopoo"
+            "github": "peepeepooopoo",
+            "year": "2022/2023"
         },
         {
             "portrait": "placeholder.png",
             "name": "name5",
-            "role": "the pee pee man"
+            "role": "the pee pee man",
+            "year": "2022/2023"
         }
     ],
     "actualCommittee": [
         {
-            "name": "The photo is just {name}.jpg, it may not be a jpg, but if the photo is there, they have a photo",
+            "name": "The portrait is just {name}.jpg, it may not be a jpg, but if the portrait is there, they have a portrait",
             "role": "Warning"
         },
         {
             "name": "Stephanie Flower",
             "role": "President",
-            "photo": "Stephanie Flower.jpg"
+            "portrait": "Stephanie Flower.jpg",
+            "year": "2022/2023"
         },
         {
             "name": "Amber Abuah",
             "role": "Secretary",
-            "photo": "Amber Abuah.jpg"
+            "portrait": "Amber Abuah.jpg",
+            "year": "2022/2023"
         },
         {
             "name": "Leo Durrant",
             "role": "Treasurer",
-            "photo": "Leo Durrant.jpg"
+            "portrait": "Leo Durrant.jpg",
+            "year": "2022/2023"
         },
         {
             "name": "James Arnott",
             "role": "Vice President",
-            "photo": "James Arnott.jpg"
+            "portrait": "James Arnott.jpg",
+            "year": "2022/2023"
         },
         {
             "name": "Danny Piper",
             "role": "Competitions Director",
-            "photo": "Danny Piper.jpg"
+            "portrait": "Danny Piper.jpg",
+            "year": "2022/2023"
         },
         {
             "name": "Riddhi Varia",
             "role": "Charity & Welfare Director",
-            "photo": "Riddhi Varia.jpg"
+            "portrait": "Riddhi Varia.jpg",
+            "year": "2022/2023"
         },
         {
             "name": "Sinan Iqbal",
             "role": "First Year Representitive",
-            "photo": "Sinan Iqbal.jpg"
+            "portrait": "Sinan Iqbal.jpg",
+            "year": "2022/2023"
         },
         {
             "name": "William Sandy",
             "role": "Events Director",
-            "photo": "William Sandy.jpg"
+            "portrait": "William Sandy.jpg",
+            "year": "2022/2023"
         },
         {
             "name": "Joshua Yewman",
             "role": "President",
-            "photo": "Joshua Yewman.jpg"
+            "portrait": "Joshua Yewman.jpg",
+            "year": "2021/2022"
         },
         {
             "name": "Leondro Lio",
             "role": "Vice President",
-            "photo": "Leondro Lio.jpg"
+            "portrait": "Leondro Lio.jpg",
+            "year": "2021/2022"
         },
         {
             "name": "Tayma Ferriera",
             "role": "Secretary",
-            "photo": "Tayma Ferriera.jpg"
+            "portrait": "Tayma Ferriera.jpg",
+            "year": "2021/2022"
         },
         {
             "name": "Louise Fair",
             "role": "Treasurer",
-            "photo": "Louise Fair.jpg"
+            "portrait": "Louise Fair.jpg",
+            "year": "2021/2022"
         },
         {
             "name": "Shaw Chifamba",
             "role": "Charity and Welfare Director",
-            "photo": "Shaw Chifamba.jpg"
+            "portrait": "Shaw Chifamba.jpg",
+            "year": "2021/2022"
         },
         {
             "name": "Amber Abuah",
             "role": "Promotions Director",
-            "photo": "Amber Abuah.jpg"
+            "portrait": "Amber Abuah.jpg",
+            "year": "2021/2022"
         },
         {
             "name": "Charlie Aylott",
             "role": "First Year Representative",
-            "photo": "Charlie Aylott.jpg"
+            "portrait": "Charlie Aylott.jpg",
+            "year": "2021/2022"
         },
         {
             "name": "Danny Piper",
             "role": "Events Director",
-            "photo": "Danny Piper.jpg"
+            "portrait": "Danny Piper.jpg",
+            "year": "2021/2022"
         },
         {
             "name": "Saurabh Chopra",
-            "role": "Competitions Director"
+            "role": "Competitions Director",
+            "year": "2021/2022"
         },
         {
             "name": "Joshua Sawyer",
             "role": "President",
-            "photo": "Joshua Sawyer.jpg"
+            "portrait": "Joshua Sawyer.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Tom Bailey",
             "role": "Vice President",
-            "photo": "Tom Bailey.jpg"
+            "portrait": "Tom Bailey.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Oliver Graham",
             "role": "wah",
-            "photo": "Oliver Graham.jpg"
+            "portrait": "Oliver Graham.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Isaac Scarisbrick",
             "role": "Treasurer",
-            "photo": "Isaac Scarisbrick.jpg"
+            "portrait": "Isaac Scarisbrick.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Megi Braholli",
             "role": "Secretary",
-            "photo": "Megi Braholli.jpg"
+            "portrait": "Megi Braholli.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Tayma Ferriera",
             "role": "Outreach Director",
-            "photo": "Tayma Ferriera.jpg"
+            "portrait": "Tayma Ferriera.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Dipo Rodipe",
             "role": "Academic Director",
-            "photo": "Dipo Rodipe.jpg"
+            "portrait": "Dipo Rodipe.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Leondro Lio",
             "role": "Competitions Director",
-            "photo": "Leondro Lio.jpg"
+            "portrait": "Leondro Lio.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Shaw Chifamba",
             "role": "Charity and Welfare Director",
-            "photo": "Shaw Chifamba.jpg"
+            "portrait": "Shaw Chifamba.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Louise Fair",
             "role": "First Year Representative",
-            "photo": "Louise Fair.jpg"
+            "portrait": "Louise Fair.jpg",
+            "year": "2020/2021"
         },
         {
             "name": "Joshua Sawyer",
             "role": "President",
-            "photo": "Joshua Sawyer.jpg"
+            "portrait": "Joshua Sawyer.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "Tom Bailey",
             "role": "Secretary",
-            "photo": "Tom Bailey.jpg"
+            "portrait": "Tom Bailey.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "Wes Sleeman",
             "role": "Competitions Officer",
-            "photo": "Wes Sleeman.jpg"
+            "portrait": "Wes Sleeman.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "Tayma Ferriera",
             "role": "Outreach Director",
-            "photo": "Tayma Ferriera.jpg"
+            "portrait": "Tayma Ferriera.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "Cameron Jones",
             "role": "Events Director",
-            "photo": "Cameron Jones.jpg"
+            "portrait": "Cameron Jones.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "Nkeiruka Whenu",
             "role": "First Year Representitive",
-            "photo": "Nkeiruka Whenu.jpg"
+            "portrait": "Nkeiruka Whenu.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "Megi Braholli",
             "role": "Social Media Director",
-            "photo": "Megi Braholli.jpg"
+            "portrait": "Megi Braholli.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "William Campany",
             "role": "Graphic Designer",
-            "photo": "William Campany.jpg"
+            "portrait": "William Campany.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "John Stockwell Samuels II",
-            "role": "Vice President"
+            "role": "Vice President",
+            "year": "2019/2020"
         },
         {
             "name": "Chris Melville",
-            "role": "Treasurer"
+            "role": "Treasurer",
+            "year": "2019/2020"
         },
         {
             "name": "Sarah Wolstencroft",
-            "role": "Academic Director"
+            "role": "Academic Director",
+            "year": "2019/2020"
         },
         {
             "name": "Megi Braholli",
             "role": "Communications Officer",
-            "photo": "Megi Braholli.jpg"
+            "portrait": "Megi Braholli.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "Joshua Sawyer",
             "role": "First Year Representitive",
-            "photo": "Joshua Sawyer.jpg"
+            "portrait": "Joshua Sawyer.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "William Campany",
             "role": "Graphics Design Volunteer",
-            "photo": "William Campany.jpg"
+            "portrait": "William Campany.jpg",
+            "year": "2019/2020"
         },
         {
             "name": "Dulcie Jackson",
-            "role": "President"
+            "role": "President",
+            "year": "2018/2019"
         },
         {
             "name": "Kaloyan Chokanov",
-            "role": "Vice President"
+            "role": "Vice President",
+            "year": "2018/2019"
         },
         {
             "name": "Chris Melville",
-            "role": "Treasurer"
+            "role": "Treasurer",
+            "year": "2018/2019"
         },
         {
             "name": "John Stockwell Samuels II",
-            "role": "Secretary"
+            "role": "Secretary",
+            "year": "2018/2019"
         },
         {
             "name": "Simron Patel",
-            "role": "Diversity Officer"
+            "role": "Diversity Officer",
+            "year": "2018/2019"
         },
         {
             "name": "Hugh Wells",
-            "role": "Competitions Officer"
+            "role": "Competitions Officer",
+            "year": "2018/2019"
         },
         {
             "name": "Petr Stroganov",
-            "role": "First Year Representitive"
+            "role": "First Year Representitive",
+            "year": "2018/2019"
         },
         {
             "name": "Dom Hall",
-            "role": "President"
+            "role": "President",
+            "year": "2017/2018"
         },
         {
             "name": "Luke Johnson",
-            "role": "Vice President"
+            "role": "Vice President",
+            "year": "2017/2018"
         },
         {
             "name": "Chris Melville",
-            "role": "Treasurer"
+            "role": "Treasurer",
+            "year": "2017/2018"
         },
         {
             "name": "Kaloyan Chokanov",
-            "role": "Secretary"
+            "role": "Secretary",
+            "year": "2017/2018"
         },
         {
             "name": "Alex Clarke",
-            "role": "Communications Officer"
+            "role": "Communications Officer",
+            "year": "2017/2018"
         },
         {
             "name": "Matt Brown",
-            "role": "Careers Officer"
+            "role": "Careers Officer",
+            "year": "2017/2018"
         },
         {
             "name": "Dulcie Jackson",
-            "role": "Womens Ambassador"
+            "role": "Womens Ambassador",
+            "year": "2017/2018"
         },
         {
             "name": "Hugh Wells",
-            "role": "Competitions Officer"
+            "role": "Competitions Officer",
+            "year": "2017/2018"
         },
         {
             "name": "Benzi Mooneegan",
-            "role": "First Year Representitive"
+            "role": "First Year Representitive",
+            "year": "2017/2018"
         },
         {
             "name": "Ommy Akhigbe",
-            "role": "President"
+            "role": "President",
+            "year": "2016/2017"
         },
         {
             "name": "James Green",
-            "role": "Vice President"
+            "role": "Vice President",
+            "year": "2016/2017"
         },
         {
             "name": "Jamie Woods",
-            "role": "Treasurer"
+            "role": "Treasurer",
+            "year": "2016/2017"
         },
         {
             "name": "Maximillian Berkmann",
-            "role": "Secretary"
+            "role": "Secretary",
+            "year": "2016/2017"
         },
         {
             "name": "Joe Rowell",
-            "role": "Communications Officer"
+            "role": "Communications Officer",
+            "year": "2016/2017"
         },
         {
             "name": "Chloe Houlihan",
-            "role": "Careers Officer"
+            "role": "Careers Officer",
+            "year": "2016/2017"
         },
         {
             "name": "Laura Hughes",
-            "role": "Womens Ambassador"
+            "role": "Womens Ambassador",
+            "year": "2016/2017"
         },
         {
             "name": "Freya Sheer-Hardwick",
-            "role": "First Year Representitive"
+            "role": "First Year Representitive",
+            "year": "2016/2017"
         },
         {
             "name": "Christopher Harris",
-            "role": "President"
+            "role": "President",
+            "year": "2015/2016"
         },
         {
             "name": "Ommy Akhigbe",
-            "role": "Vice President"
+            "role": "Vice President",
+            "year": "2015/2016"
         },
         {
             "name": "Wilbur Fernandes",
-            "role": "Treasurer"
+            "role": "Treasurer",
+            "year": "2015/2016"
         },
         {
             "name": "Chris Maddex",
-            "role": "Secretary"
+            "role": "Secretary",
+            "year": "2015/2016"
         },
         {
             "name": "William Webster",
-            "role": "Communications Officer"
+            "role": "Communications Officer",
+            "year": "2015/2016"
         },
         {
             "name": "Eivinas Zaicevicius",
-            "role": "Careers Officer"
+            "role": "Careers Officer",
+            "year": "2015/2016"
         },
         {
             "name": "Lauren Williams",
-            "role": "Womens Ambassador"
+            "role": "Womens Ambassador",
+            "year": "2015/2016"
         },
         {
             "name": "Filippo Di Paola",
-            "role": "President"
+            "role": "President",
+            "year": "2014/2015"
         },
         {
             "name": "Remi Jahau",
-            "role": "Vice President"
+            "role": "Vice President",
+            "year": "2014/2015"
         },
         {
             "name": "Kirin Ali",
-            "role": "Treasurer"
+            "role": "Treasurer",
+            "year": "2014/2015"
         },
         {
             "name": "Feargus Pendlebury",
-            "role": "Secretary"
+            "role": "Secretary",
+            "year": "2014/2015"
         },
         {
             "name": "Omar Rahman",
-            "role": "Communications Officer"
+            "role": "Communications Officer",
+            "year": "2014/2015"
         },
         {
             "name": "Robert Markiewicz",
-            "role": "Careers Officer"
+            "role": "Careers Officer",
+            "year": "2014/2015"
         },
         {
             "name": "Bernice Soutter",
-            "role": "Womens Ambassador"
+            "role": "Womens Ambassador",
+            "year": "2014/2015"
         },
         {
             "name": "Jingwei Emil Tan",
-            "role": "President"
+            "role": "President",
+            "year": "2013/2014"
         },
         {
             "name": "James Black",
-            "role": "Vice President"
+            "role": "Vice President",
+            "year": "2013/2014"
         },
         {
             "name": "Christian Jank",
-            "role": "Secretary"
+            "role": "Secretary",
+            "year": "2013/2014"
         },
         {
             "name": "Meng-yi Lee",
-            "role": "Treasurer"
+            "role": "Treasurer",
+            "year": "2013/2014"
         },
         {
             "name": "Slav Danchev",
-            "role": "Communications Officer"
+            "role": "Communications Officer",
+            "year": "2013/2014"
         },
         {
             "name": "Jingwei Emil Tan",
-            "role": "President"
+            "role": "President",
+            "year": "2012/2013"
         },
         {
             "name": "Christian Jank",
-            "role": "Secretary"
+            "role": "Secretary",
+            "year": "2012/2013"
         },
         {
             "name": "Meng-yi Lee",
-            "role": "Treasurer"
+            "role": "Treasurer",
+            "year": "2012/2013"
         }
     ]
 }
