@@ -1,29 +1,416 @@
 {
-    "committee" : [
+    "committee": [
         {
-            "portrait" : "placeholder.png",
-            "name" : "name",
-            "role" : "role",
-            "github" : "github.com",
-            "linkedin" : "linkedin.com"
+            "portrait": "placeholder.png",
+            "name": "name",
+            "role": "role",
+            "github": "github.com",
+            "linkedin": "linkedin.com"
         },
         {
-            "portrait" : "placeholder.png",
-            "name" : "name2",
-            "role" : "role2",
-            "github" : "github.com/2",
-            "linkedin" : "linkedin.com/2"
+            "portrait": "placeholder.png",
+            "name": "name2",
+            "role": "role2",
+            "github": "github.com/2",
+            "linkedin": "linkedin.com/2"
         },
         {
-            "portrait" : "placeholder.png",
-            "name" : "name3",
-            "role" : "role4",
-            "github" : "peepeepooopoo"
+            "portrait": "placeholder.png",
+            "name": "name3",
+            "role": "role4",
+            "github": "peepeepooopoo"
         },
         {
-            "portrait" : "placeholder.png",
-            "name" : "name5",
-            "role" : "the pee pee man"
+            "portrait": "placeholder.png",
+            "name": "name5",
+            "role": "the pee pee man"
+        }
+    ],
+    "actualCommittee": [
+        {
+            "name": "Stephanie Flower",
+            "role": "President",
+            "photo": "Stephanie Flower.jpg"
+        },
+        {
+            "name": "Amber Abuah",
+            "role": "Secretary",
+            "photo": "Amber Abuah.jpg"
+        },
+        {
+            "name": "Leo Durrant",
+            "role": "Treasurer",
+            "photo": "Leo Durrant.jpg"
+        },
+        {
+            "name": "James Arnott",
+            "role": "Vice President",
+            "photo": "James Arnott.jpg"
+        },
+        {
+            "name": "Danny Piper",
+            "role": "Competitions Director",
+            "photo": "Danny Piper.jpg"
+        },
+        {
+            "name": "Riddhi Varia",
+            "role": "Charity & Welfare Director",
+            "photo": "Riddhi Varia.jpg"
+        },
+        {
+            "name": "Sinan Iqbal",
+            "role": "First Year Representitive",
+            "photo": "Sinan Iqbal.jpg"
+        },
+        {
+            "name": "William Sandy",
+            "role": "Events Director",
+            "photo": "William Sandy.jpg"
+        },
+        {
+            "name": "Joshua Yewman",
+            "role": "President",
+            "photo": "Joshua Yewman.jpg"
+        },
+        {
+            "name": "Leondro Lio",
+            "role": "Vice President",
+            "photo": "Leondro Lio.jpg"
+        },
+        {
+            "name": "Tayma Ferriera",
+            "role": "Secretary",
+            "photo": "Tayma Ferriera.jpg"
+        },
+        {
+            "name": "Louise Fair",
+            "role": "Treasurer",
+            "photo": "Louise Fair.jpg"
+        },
+        {
+            "name": "Shaw Chifamba",
+            "role": "Charity and Welfare Director",
+            "photo": "Shaw Chifamba.jpg"
+        },
+        {
+            "name": "Amber Abuah",
+            "role": "Promotions Director",
+            "photo": "Amber Abuah.jpg"
+        },
+        {
+            "name": "Charlie Aylott",
+            "role": "First Year Representative",
+            "photo": "Charlie Aylott.jpg"
+        },
+        {
+            "name": "Danny Piper",
+            "role": "Events Director",
+            "photo": "Danny Piper.jpg"
+        },
+        {
+            "name": "Saurabh Chopra",
+            "role": "Competitions Director"
+        },
+        {
+            "name": "Joshua Sawyer",
+            "role": "President",
+            "photo": "Joshua Sawyer.jpg"
+        },
+        {
+            "name": "Tom Bailey",
+            "role": "Vice President",
+            "photo": "Tom Bailey.jpg"
+        },
+        {
+            "name": "Oliver Graham",
+            "role": "wah",
+            "photo": "Oliver Graham.jpg"
+        },
+        {
+            "name": "Isaac Scarisbrick",
+            "role": "Treasurer",
+            "photo": "Isaac Scarisbrick.jpg"
+        },
+        {
+            "name": "Megi Braholli",
+            "role": "Secretary",
+            "photo": "Megi Braholli.jpg"
+        },
+        {
+            "name": "Tayma Ferriera",
+            "role": "Outreach Director",
+            "photo": "Tayma Ferriera.jpg"
+        },
+        {
+            "name": "Dipo Rodipe",
+            "role": "Academic Director",
+            "photo": "Dipo Rodipe.jpg"
+        },
+        {
+            "name": "Leondro Lio",
+            "role": "Competitions Director",
+            "photo": "Leondro Lio.jpg"
+        },
+        {
+            "name": "Shaw Chifamba",
+            "role": "Charity and Welfare Director",
+            "photo": "Shaw Chifamba.jpg"
+        },
+        {
+            "name": "Louise Fair",
+            "role": "First Year Representative",
+            "photo": "Louise Fair.jpg"
+        },
+        {
+            "name": "Joshua Sawyer",
+            "role": "President",
+            "photo": "Joshua Sawyer.jpg"
+        },
+        {
+            "name": "Tom Bailey",
+            "role": "Secretary",
+            "photo": "Tom Bailey.jpg"
+        },
+        {
+            "name": "Wes Sleeman",
+            "role": "Competitions Officer",
+            "photo": "Wes Sleeman.jpg"
+        },
+        {
+            "name": "Tayma Ferriera",
+            "role": "Outreach Director",
+            "photo": "Tayma Ferriera.jpg"
+        },
+        {
+            "name": "Cameron Jones",
+            "role": "Events Director",
+            "photo": "Cameron Jones.jpg"
+        },
+        {
+            "name": "Nkeiruka Whenu",
+            "role": "First Year Representitive",
+            "photo": "Nkeiruka Whenu.jpg"
+        },
+        {
+            "name": "Megi Braholli",
+            "role": "Social Media Director",
+            "photo": "Megi Braholli.jpg"
+        },
+        {
+            "name": "William Campany",
+            "role": "Graphic Designer",
+            "photo": "William Campany.jpg"
+        },
+        {
+            "name": "John Stockwell Samuels II",
+            "role": "Vice President"
+        },
+        {
+            "name": "Chris Melville",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Sarah Wolstencroft",
+            "role": "Academic Director"
+        },
+        {
+            "name": "Megi Braholli",
+            "role": "Communications Officer",
+            "photo": "Megi Braholli.jpg"
+        },
+        {
+            "name": "Joshua Sawyer",
+            "role": "First Year Representitive",
+            "photo": "Joshua Sawyer.jpg"
+        },
+        {
+            "name": "William Campany",
+            "role": "Graphics Design Volunteer",
+            "photo": "William Campany.jpg"
+        },
+        {
+            "name": "Dulcie Jackson",
+            "role": "President"
+        },
+        {
+            "name": "Kaloyan Chokanov",
+            "role": "Vice President"
+        },
+        {
+            "name": "Chris Melville",
+            "role": "Treasurer"
+        },
+        {
+            "name": "John Stockwell Samuels II",
+            "role": "Secretary"
+        },
+        {
+            "name": "Simron Patel",
+            "role": "Diversity Officer"
+        },
+        {
+            "name": "Hugh Wells",
+            "role": "Competitions Officer"
+        },
+        {
+            "name": "Petr Stroganov",
+            "role": "First Year Representitive"
+        },
+        {
+            "name": "Dom Hall",
+            "role": "President"
+        },
+        {
+            "name": "Luke Johnson",
+            "role": "Vice President"
+        },
+        {
+            "name": "Chris Melville",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Kaloyan Chokanov",
+            "role": "Secretary"
+        },
+        {
+            "name": "Alex Clarke",
+            "role": "Communications Officer"
+        },
+        {
+            "name": "Matt Brown",
+            "role": "Careers Officer"
+        },
+        {
+            "name": "Dulcie Jackson",
+            "role": "Womens Ambassador"
+        },
+        {
+            "name": "Hugh Wells",
+            "role": "Competitions Officer"
+        },
+        {
+            "name": "Benzi Mooneegan",
+            "role": "First Year Representitive"
+        },
+        {
+            "name": "Ommy Akhigbe",
+            "role": "President"
+        },
+        {
+            "name": "James Green",
+            "role": "Vice President"
+        },
+        {
+            "name": "Jamie Woods",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Maximillian Berkmann",
+            "role": "Secretary"
+        },
+        {
+            "name": "Joe Rowell",
+            "role": "Communications Officer"
+        },
+        {
+            "name": "Chloe Houlihan",
+            "role": "Careers Officer"
+        },
+        {
+            "name": "Laura Hughes",
+            "role": "Womens Ambassador"
+        },
+        {
+            "name": "Freya Sheer-Hardwick",
+            "role": "First Year Representitive"
+        },
+        {
+            "name": "Christopher Harris",
+            "role": "President"
+        },
+        {
+            "name": "Ommy Akhigbe",
+            "role": "Vice President"
+        },
+        {
+            "name": "Wilbur Fernandes",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Chris Maddex",
+            "role": "Secretary"
+        },
+        {
+            "name": "William Webster",
+            "role": "Communications Officer"
+        },
+        {
+            "name": "Eivinas Zaicevicius",
+            "role": "Careers Officer"
+        },
+        {
+            "name": "Lauren Williams",
+            "role": "Womens Ambassador"
+        },
+        {
+            "name": "Filippo Di Paola",
+            "role": "President"
+        },
+        {
+            "name": "Remi Jahau",
+            "role": "Vice President"
+        },
+        {
+            "name": "Kirin Ali",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Feargus Pendlebury",
+            "role": "Secretary"
+        },
+        {
+            "name": "Omar Rahman",
+            "role": "Communications Officer"
+        },
+        {
+            "name": "Robert Markiewicz",
+            "role": "Careers Officer"
+        },
+        {
+            "name": "Bernice Soutter",
+            "role": "Womens Ambassador"
+        },
+        {
+            "name": "Jingwei Emil Tan",
+            "role": "President"
+        },
+        {
+            "name": "James Black",
+            "role": "Vice President"
+        },
+        {
+            "name": "Christian Jank",
+            "role": "Secretary"
+        },
+        {
+            "name": "Meng-yi Lee",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Slav Danchev",
+            "role": "Communications Officer"
+        },
+        {
+            "name": "Jingwei Emil Tan",
+            "role": "President"
+        },
+        {
+            "name": "Christian Jank",
+            "role": "Secretary"
+        },
+        {
+            "name": "Meng-yi Lee",
+            "role": "Treasurer"
         }
     ]
 }
