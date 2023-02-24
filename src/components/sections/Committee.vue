@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import committee from "@/content/committee.json";
-let activeCommittee = committee.committee;
 
+let committeeData = committee.actualCommittee;
+const currentYear = Object.keys(committeeData)[0] as keyof typeof committeeData;
 </script>
 
 <template>
@@ -13,8 +14,9 @@ let activeCommittee = committee.committee;
         </div>
 
         <div class="flex justify-center flex-row flex-wrap w-full">
+
             <CommitteeMember
-                v-for="item in activeCommittee"
+                v-for='item in committeeData[currentYear]'
                 :key="item.name"
                 :portrait="item.portrait"
                 :name="item.name"
